@@ -2,7 +2,8 @@
 def convertTemp(cels:list)->list:
    
     fah = []
-    for i in cels:
+    while len(cels)!=0:
+        i = cels.pop(0)
         f = (i*9/5)+32 
         fah.append(f"{f}F")
     return fah
